@@ -6,17 +6,20 @@ The Trips table stores information about trips taken by various modes of travel 
 SELECT distinct RentalCompany FROM BYCAR
 WHERE Mileage>=27;
 ```
+
 ## Q2. List trip IDs taken on train costing strictly more than $150.
 ```
 SELECT TRIPS.TID FROM TRIPS INNER JOIN BYTRAIN
 ON TRIPS.TID=BYTRAIN.TID
 WHERE FARE>150;
 ```
+
 ## Q3.Find trip IDs and their fare , that are not taken in the US i.e., 'Non-US' trips. 
 ```
 SELECT TID, FARE FROM TRIPS
 WHERE TRIPSTATE ='Non-US';
 ```
+
 ## Q4.Find the business class plane trip IDs that are greater than $1000.
 ```
 SELECT BYPLANE.TID FROM BYPLANE
