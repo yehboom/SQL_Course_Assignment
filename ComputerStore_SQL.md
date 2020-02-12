@@ -1,5 +1,8 @@
 # ComputerStore_SQL
 
+The Employee table stores information about employee. The Department table stores information about a department, and Project about the project. Works_On  and Dependent are relationship tables. 
+
+
 ## 1.Retrieve the names of all employees who work on at least one of the projects. (In other words, look at the list of projects given in the PROJECT table, and retrieve the names of all employees who work on at least one of them.) 
 ```
 SELECT distinct FNAME, MINIT,LNAME
